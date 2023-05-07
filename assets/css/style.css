@@ -1,0 +1,608 @@
+body, ul, ol, li {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn, button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+
+input[type=text], input[type=password] {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.black {
+  background-color: #000000;
+}
+
+.pink {
+  background-color: #EF5DA8;
+}
+
+.blue {
+  background-color: #0085FF;
+}
+
+.orange {
+  background-color: #fd5a3d;
+}
+
+#black {
+  background-color: #000000;
+}
+
+#pink {
+  background-color: #EF5DA8;
+}
+
+#blue {
+  background-color: #0085FF;
+}
+
+#orange {
+  background-color: #fd5a3d;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+header .logo {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+}
+header .logo:hover {
+  cursor: pointer;
+}
+header .logo .ellipse {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+  background-color: #fd5a3d;
+}
+header .navigate {
+  width: 40%;
+}
+header .navigate .nav-links {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid #808080;
+  padding-right: 7%;
+}
+header .navigate .nav-links a {
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+header .navigate .nav-links a:hover {
+  color: #fd5a3d;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+
+h2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 16px;
+}
+
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #000000;
+}
+
+.btn.main {
+  width: 33%;
+  border: 1px solid #fd5a3d;
+  color: #fd5a3d;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  padding: 10px 0;
+  transition: 0.4s;
+  border-radius: 8px;
+}
+.btn.main:hover {
+  background-color: #fd5a3d;
+  color: white;
+  cursor: pointer;
+}
+
+.btn.second {
+  width: 33%;
+  border: 1px solid #0085FF;
+  color: #0085FF;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  padding: 10px 0;
+  transition: 0.4s;
+  border-radius: 8px;
+}
+.btn.second:hover {
+  background-color: #0085FF;
+  color: white;
+  cursor: pointer;
+}
+
+.btn.reverse {
+  width: 33%;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  padding: 10px 0;
+  transition: 0.4s;
+  border-radius: 8px;
+}
+.btn.reverse:hover {
+  background-color: #ffffff;
+  color: white;
+  cursor: pointer;
+  color: #fd5a3d;
+}
+
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.basket .wrapper .table-basket .products-container .item, .basket .wrapper .table-basket .columns-name, .thing .wrapper .thing-info .stats, .thing .wrapper .thing-info .title, .thing .wrapper .thing-container .items, .thing .wrapper, .product .back, .product, .category .cards, .main .wrapper .row, .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  margin-bottom: 80px;
+}
+
+.main {
+  background-color: #fd5a3d;
+}
+.main .wrapper .row .content {
+  width: 45%;
+}
+.main .wrapper .row .content h1 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-size: 80px;
+  color: #ffffff;
+}
+.main .wrapper .cover {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+.main .wrapper .cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.category .cards .card {
+  width: 31%;
+  cursor: pointer;
+}
+.category .cards .card .cover {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+}
+.category .cards .card .cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.category .cards .card .cover img {
+  transition: 0.5s;
+}
+.category .cards .card .cover img:hover {
+  filter: grayscale(1);
+}
+.category .cards .card .cover h2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 50%;
+  text-align: center;
+  width: 100%;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.category .cards:first-child {
+  margin-bottom: 3.5%;
+}
+.category .cards:first-child .card:first-child {
+  width: 65.5%;
+}
+.category .cards:first-child .card:first-child .cover {
+  position: relative;
+  width: 100%;
+  padding-top: 47%;
+}
+.category .cards:first-child .card:first-child .cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+a {
+  width: 31%;
+}
+a .product {
+  width: 100%;
+}
+
+.product {
+  width: 31%;
+  flex-direction: column;
+  transition: 0.4s;
+  border: 1px solid transparent;
+}
+.product:hover {
+  cursor: pointer;
+  border: 1px solid rgba(32, 32, 32, 0.3019607843);
+}
+.product p {
+  text-align: center;
+}
+.product .back {
+  background-color: rgb(220, 218, 198);
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+.product .back .cover {
+  position: relative;
+  width: 100%;
+  padding-top: 120%;
+}
+.product .back .cover img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product .back .cover .circle {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 0;
+  width: 60%;
+  padding-top: 60%;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+.product .back .cover img {
+  scale: 0.85;
+  z-index: 1;
+}
+.product .content {
+  padding-bottom: 10%;
+}
+.product .content .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 16px;
+}
+.product .content .price {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.page-title {
+  background-color: #fd5a3d;
+  padding: 20px 0;
+}
+.page-title .container {
+  flex-direction: column;
+}
+.page-title .container h1, .page-title .container span, .page-title .container a {
+  color: #ffffff;
+}
+.page-title .container h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.page-title .container span, .page-title .container a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.page-title .container .navigation {
+  margin-top: 10px;
+}
+
+.counter {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  border: 1px solid #808080;
+  border-radius: 5px;
+}
+.counter .btn {
+  padding: 6px 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  transition: 0.4s;
+}
+.counter .btn:hover {
+  background-color: #fd5a3d;
+  color: #ffffff;
+  cursor: pointer;
+}
+.counter .btn.minus {
+  border-radius: 4px 0 0 4px;
+}
+.counter .btn.plus {
+  border-radius: 0 4px 4px 0;
+}
+.counter p {
+  width: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.thing .wrapper .thing-container {
+  width: 31%;
+}
+.thing .wrapper .thing-container .product {
+  width: 100%;
+  border: none;
+}
+.thing .wrapper .thing-container .items {
+  margin-top: 3.5%;
+}
+.thing .wrapper .thing-container .items .product {
+  width: 31%;
+}
+.thing .wrapper .thing-info {
+  width: 60%;
+}
+.thing .wrapper .thing-info .title {
+  margin-bottom: 20px;
+}
+.thing .wrapper .thing-info .title h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.thing .wrapper .thing-info .title h1.price {
+  color: #fd5a3d;
+}
+.thing .wrapper .thing-info .description {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+.thing .wrapper .thing-info .stats .size, .thing .wrapper .thing-info .stats .color {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.thing .wrapper .thing-info .stats .size p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #808080;
+  cursor: pointer;
+}
+.thing .wrapper .thing-info .stats .size p.active {
+  color: #000000;
+  border-bottom: 1px solid #000000;
+}
+.thing .wrapper .thing-info .stats .color .ellipse-container {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.thing .wrapper .thing-info .stats .color .ellipse-container .ellipse {
+  width: 19px;
+  height: 19px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.thing .wrapper .thing-info .stats .color .ellipse-container .ellipse.active {
+  width: 13px;
+  height: 13px;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.2);
+}
+.thing .wrapper .thing-info .card {
+  box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.05);
+  margin-top: 30px;
+  padding: 25px;
+}
+.thing .wrapper .thing-info .card .counter-container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.thing .wrapper .thing-info .card .to-basket {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+.thing .wrapper .thing-info .card .to-basket .like {
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #808080;
+  border-radius: 5px;
+  margin-right: 20px;
+  transition: 0.5s;
+}
+.thing .wrapper .thing-info .card .to-basket .like:hover {
+  background-color: #fd5a3d;
+  cursor: pointer;
+  border: 1px solid #fd5a3d;
+}
+.thing .wrapper .thing-info .card .to-basket .like:hover svg {
+  fill: #ffffff;
+}
+.thing .wrapper .thing-info .card .to-basket .btn.main {
+  background-color: #ffffff;
+}
+.thing .wrapper .thing-info .card .to-basket .btn.main:hover {
+  background-color: #fd5a3d;
+}
+.thing .wrapper .thing-info .additional {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.thing .wrapper .thing-info .additional .add {
+  display: flex;
+  align-items: baseline;
+}
+.thing .wrapper .thing-info .additional .add h3 {
+  margin-right: 18px;
+}
+.thing .wrapper .thing-info .additional .add a {
+  width: fit-content;
+  text-transform: uppercase;
+}
+.thing .wrapper .thing-info .additional .add a:hover {
+  color: #fd5a3d;
+}
+.thing .wrapper .thing-info .additional .add a, .thing .wrapper .thing-info .additional .add svg {
+  margin-right: 10px;
+  transition: 0.5s;
+}
+.thing .wrapper .thing-info .additional .add a:last-child, .thing .wrapper .thing-info .additional .add svg:last-child {
+  margin-right: 0;
+}
+.thing .wrapper .thing-info .additional .add svg:hover {
+  fill: #fd5a3d;
+  color: #fd5a3d;
+  cursor: pointer;
+}
+
+.basket .wrapper p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  color: #505050;
+  text-align: center;
+  font-size: 18px;
+}
+.basket .wrapper .table-basket {
+  border: 1px solid #808080;
+  margin-bottom: 30px;
+}
+.basket .wrapper .table-basket .columns-name {
+  border-bottom: 1px solid #808080;
+  padding: 25px 0;
+}
+.basket .wrapper .table-basket #first {
+  width: 45%;
+}
+.basket .wrapper .table-basket #second, .basket .wrapper .table-basket #third, .basket .wrapper .table-basket #fourth {
+  width: 15%;
+}
+.basket .wrapper .table-basket #fifth {
+  width: 10%;
+}
+.basket .wrapper .table-basket .products-container {
+  padding: 25px 0;
+}
+.basket .wrapper .table-basket .products-container .item {
+  margin-bottom: 20px;
+}
+.basket .wrapper .table-basket .products-container .item:last-child {
+  margin-bottom: 0;
+}
+.basket .wrapper .table-basket .products-container .item #first {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.basket .wrapper .table-basket .products-container .item #first .product:hover {
+  border: 1px solid transparent;
+}
+.basket .wrapper .table-basket .products-container .item #first p {
+  text-align: left;
+}
+.basket .wrapper .table-basket .products-container .item #first .settings {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+.basket .wrapper .table-basket .products-container .item #first .settings .ellipse {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  background-color: #000000;
+}
+.basket .wrapper .table-basket .products-container .item #first .settings .size {
+  text-transform: uppercase;
+  color: #000000;
+}
+.basket .wrapper .table-basket .products-container .item #third {
+  display: flex;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=style.css.map */

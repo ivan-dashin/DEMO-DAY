@@ -1,0 +1,152 @@
+.thing{
+    .wrapper{
+        @extend %container;
+        .thing-container{
+            width: 31%;
+            .product{
+                width: 100%;
+                border: none;
+            }
+            .items{
+                @extend %container;
+                margin-top: 3.5%;
+                .product{
+                    width: 31%;
+                }
+            }
+        }
+        .thing-info{
+            width: 60%;
+            .title{
+                @extend %container;
+                margin-bottom: 20px;
+                h1{
+                    font-size: 32px;
+                    text-transform: uppercase;
+                    &.price{
+                        color: $main;
+                    }
+                }
+            }
+            .description{
+                @include font(400);
+                margin-bottom: 20px;
+                text-align: justify;
+            }
+            .stats{
+                @extend %container;
+                .size,.color{
+                    width: 45%;
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+                .size{
+                    p{
+                        @include font(500);
+                        color: $placeholder;
+                        cursor: pointer;
+                        &.active{
+                            color: $black;
+                            border-bottom: 1px solid $black;
+                        }
+                    }
+                }
+                .color{
+                    .ellipse-container{
+                        width: 22px;
+                        height: 22px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .ellipse{
+                            width: 19px;
+                            height: 19px;
+                            border-radius: 100%;
+                            cursor: pointer;
+                            &.active{
+                                width: 13px;
+                                height: 13px;
+                                border: 3px solid $white;
+                                box-shadow: 0 0 5px 4px rgba($color: #000000, $alpha: 0.2);
+                            }
+                        }
+                    }
+                }
+            }
+            .card{
+                box-shadow: 0 0 5px 4px rgba($color: #000000, $alpha: 0.05);
+                margin-top: 30px;
+                padding: 25px;
+                .counter-container{
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+                }
+                .to-basket{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: stretch;
+                    .like{
+                        width: 40px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid $placeholder;
+                        border-radius: 5px;
+                        margin-right: 20px;
+                        transition: 0.5s;
+                        &:hover{
+                            background-color: $main;
+                            cursor: pointer;
+                            border: 1px solid $main;
+                            svg{
+                                fill: $white;
+                            }
+                        }
+                    }
+                    .btn.main{
+                        background-color: $white;
+                        &:hover{
+                            background-color: $main;
+                        }
+                    }
+                }
+            }
+            .additional{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .add{
+                    display: flex;
+                    align-items: baseline;
+                    h3{
+                        margin-right: 18px;
+                    }
+                    a{
+                        width: fit-content;
+                        text-transform: uppercase;
+                        &:hover{
+                            color: $main;
+                        }
+                    }
+                    a,svg{
+                        margin-right: 10px;
+                        transition: 0.5s;
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                    svg{
+                        &:hover{
+                            fill: $main;
+                            color: $main;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
